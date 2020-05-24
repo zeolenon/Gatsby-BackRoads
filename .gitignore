@@ -70,5 +70,6 @@ yarn-error.log
 
 #extra
 src/css/*
+src/images/tour-images*
 .DS_Store
 original (1).zip

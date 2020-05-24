@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from './styles';
-import Title from '../Title';
+import Title from '../../Title';
 import services from '../../../constants/services';
 
 const WebServices = () => {

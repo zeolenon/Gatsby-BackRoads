@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styled from 'styled-components';
 import Layout from '../containers/Layout';
 import Banner from '../components/Banner';
@@ -10,9 +10,9 @@ export default function error() {
     <Layout>
       <Content>
         <Banner title="oops it's a dead end">
-          <Link to="/">
+          <AniLink fade to="/">
             <WhiteButton>return to home</WhiteButton>
-          </Link>
+          </AniLink>
         </Banner>
       </Content>
     </Layout>
