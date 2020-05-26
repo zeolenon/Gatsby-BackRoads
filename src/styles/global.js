@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import bcgImg from '../images/defaultBcg.jpeg';
 import './font.css';
 
 export default createGlobalStyle`
@@ -48,14 +47,6 @@ p {
 }
 a {
   text-decoration: none;
-}
-.defaultHero {
-  min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
-    url(${bcgImg}) center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* .gatsby-image-wrapper {

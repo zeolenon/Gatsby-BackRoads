@@ -1,12 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { BcgContainer } from './styles';
 
-const StyledHero = ({ img, className, children, home }) => {
+const StyledHero = ({ img, children, home }) => {
   return (
-    <BcgContainer className={className} fluid={img} home={home}>
+    <BcgContainer fluid={img} home={home}>
       {children}
     </BcgContainer>
   );
 };
 
 export default StyledHero;
+
+StyledHero.propTypes = {
+  img: PropTypes.shape().isRequired,
+  home: PropTypes.string,
+  children: PropTypes.shape(),
+};
+
+StyledHero.defaultProps = {
+  home: null,
+  children: null,
+};

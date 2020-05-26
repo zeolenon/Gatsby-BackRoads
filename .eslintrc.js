@@ -23,5 +23,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/state-in-constructor': 'off',
     'react/no-array-index-key': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
   },
 };

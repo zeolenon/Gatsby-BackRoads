@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import StyledHero from '../components/StyledHero';
 import Layout from '../containers/Layout';
+import AllTours from '../components/Tour/AllTours';
 
 export default class tours extends Component {
   render() {
@@ -9,7 +11,7 @@ export default class tours extends Component {
     return (
       <Layout>
         <StyledHero img={data.toursBcg.childImageSharp.fluid} />
-        <div>Hello from tours page!!!</div>
+        <AllTours />
       </Layout>
     );
   }
@@ -26,3 +28,9 @@ export const query = graphql`
     }
   }
 `;
+
+tours.propTypes = {
+  data: PropTypes.shape({
+    toursBcg: PropTypes.object.isRequired,
+  }).isRequired,
+};

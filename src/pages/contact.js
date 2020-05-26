@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../containers/Layout';
 import StyledHero from '../components/StyledHero';
@@ -24,3 +25,9 @@ export const query = graphql`
     }
   }
 `;
+
+contact.propTypes = {
+  data: PropTypes.shape({
+    connectBcg: PropTypes.object.isRequired,
+  }).isRequired,
+};

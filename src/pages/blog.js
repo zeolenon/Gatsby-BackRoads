@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import StyledHero from '../components/StyledHero';
 import Layout from '../containers/Layout';
@@ -28,32 +29,8 @@ export const query = graphql`
   }
 `;
 
-/*
-  const {
-    site: { siteMetadata },
-  } = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          title
-          description
-          author
-          data {
-            name
-          }
-        }
-      }
-      allFile(filter: { relativeDirectory: { eq: "tour-images" } }) {
-        totalCount
-        edges {
-          node {
-            name
-            size
-            extension
-          }
-        }
-      }
-    }
-  `);
-  console.log(props);
-*/
+blog.propTypes = {
+  data: PropTypes.shape({
+    blogBcg: PropTypes.object.isRequired,
+  }).isRequired,
+};
