@@ -1,7 +1,7 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styled from 'styled-components';
-import Layout from '../containers/Layout';
+import Layout from '../templates/Layout';
 import Banner from '../components/Banner';
 import { WhiteButton } from '../styles/Button';
 

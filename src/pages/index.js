@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import Layout from '../containers/Layout';
+import Layout from '../templates/Layout';
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
 import About from '../components/Home/About';

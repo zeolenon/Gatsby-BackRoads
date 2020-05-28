@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import StyledHero from '../components/StyledHero';
-import Layout from '../containers/Layout';
+import Layout from '../templates/Layout';
 import AllTours from '../components/Tour/AllTours';
 
 export default class tours extends Component {

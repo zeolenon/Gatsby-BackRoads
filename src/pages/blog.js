@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import StyledHero from '../components/StyledHero';
-import Layout from '../containers/Layout';
+import Layout from '../templates/Layout';
 import Images from '../components/Examples/Images';
 
 const blog = ({ data }) => {

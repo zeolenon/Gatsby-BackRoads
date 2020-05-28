@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../containers/Layout';
+import Layout from '../templates/Layout';
 import StyledHero from '../components/StyledHero';
 import Form from '../components/Contact/Form';
 
